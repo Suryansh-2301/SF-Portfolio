@@ -1,0 +1,54 @@
+<template>
+    <dialog class="contact-dialog">
+        <h1>Contact Me</h1>
+
+        <form onsubmit={handleSubmit}>
+            <p>
+                <label for="first-name">
+                    First Name
+                    <input type="text" class="firstname" name="first-name">
+                </label>
+            </p>
+            <p>
+                <label for="last-name">
+                    Last Name
+                    <input type="text" class="lastname" name="last-name">
+                </label>
+            </p>
+            <p>
+                <label for="company">
+                    Company
+                    <input type="text" class="company" name="company">
+                </label>
+            </p>
+            <p>
+                <label for="email">
+                    Email
+                    <input type="email" class="email" name="email">
+                </label>
+            </p>
+            <p>
+                <label for="description">
+                    Description
+                    <input type="text" class="description" name="description">
+                </label>
+            </p>
+            <p>
+                <textarea class="description" cols="40" rows="4" placeholder="What would you like to talk about?"></textarea>
+
+            </p>
+            <div class="btn-container">
+                <input type="submit">
+                <button onclick={closeDialog}>Cancel</button>
+            </div>
+
+        </form>
+
+        
+    </dialog>
+
+    <lightning-button label="Contact Me" class="launch-button" onclick={showDialog}></lightning-button>
+    <!-- <button class="launch-button" onclick={showDialog}>Contact Me</button> -->
+
+    <c-snackbar></c-snackbar>
+</template>
