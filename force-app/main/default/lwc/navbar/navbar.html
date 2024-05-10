@@ -1,0 +1,29 @@
+<template>
+    <header>
+        <div class="brand">
+            <a href="https://guptasuryansh-dev-ed.my.site.com/portfolio/">
+                <img src={logoImage}>
+            </a>
+        </div>
+        <nav>
+            <ul>
+            <li><a href="https://guptasuryansh-dev-ed.my.site.com/portfolio/">Home</a></li>
+            <li><a href="https://guptasuryansh-dev-ed.my.site.com/portfolio/skills">Skills</a></li>
+            <li><a href="https://guptasuryansh-dev-ed.my.site.com/portfolio/projects">Projects</a></li>
+            <li><a href="https://guptasuryansh-dev-ed.my.site.com/portfolio/certifications">Certifications</a></li>
+            </ul>
+        </nav>
+        <div class="hamberger-menu" onclick={toggleMenu}>
+
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Skills</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Certifications</a></li>
+            </ul>
+        </div>
+    </header>
+</template>
