@@ -1,0 +1,18 @@
+<template>
+    <div class="certification_section">
+        <div class="title slds-align_absolute-center"><h1>Certifications</h1></div>
+        <div class="slds-grid slds-wrap">
+            <template for:each={certificationdata} for:item="cert">
+                <div key={cert.id} class="slds-col slds-align_absolute-center slds-m-top_small slds-m-bottom_small slds-small-size_12-of-12 slds-medium-size_4-of-12 slds-large-size_4-of-12">
+                    <div class="card slds-p-around_medium">
+                        <div class="card_image">
+                            <img src={cert.image}>
+                        </div>
+                        <h2 class="card_title">{cert.name}</h2>
+                        <p class="card_text">{cert.date}</p>
+                    </div>
+                </div>
+            </template>
+        </div>
+    </div>
+</template>

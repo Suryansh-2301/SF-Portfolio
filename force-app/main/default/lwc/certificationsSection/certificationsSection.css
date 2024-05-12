@@ -1,0 +1,49 @@
+h1{
+    font-size: 32px;
+    font-family: serif;
+    text-decoration: underline;
+    color: grey;
+}
+
+.card{
+    box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 40%);
+    height: 100%;
+    width: 60%;
+    border-radius: 8px;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.card:hover{
+    box-shadow: 1px 10px 16px 0 black;
+}
+
+.card_title{
+    text-align: center;
+    color: black;
+    font-weight: 800;
+}
+
+.card_image{
+    height: 50%;
+    width: 80%;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 640px) {
+    .card{
+        box-shadow: 4px 2px 4px 0 black;
+        height: 100%;
+        width: 80%;
+        border-radius: 8px;
+        transition: 0.3s;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+    }
+}    

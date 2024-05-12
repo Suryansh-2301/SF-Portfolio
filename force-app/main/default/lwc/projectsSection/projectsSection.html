@@ -1,0 +1,31 @@
+<template>
+    <div class="slds-grid slds-wrap">
+        <div class="left_col slds-p-around_small slds-col slds-small-size_12-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12 slds-order_2 slds-large-order_1">
+            <div>
+                <div class="title">
+                    <h1>Projects</h1>
+                </div>
+                <template if:true={projectInfo}>
+                    <lightning-accordion class="accordion_section">
+                        <template for:each={projectInfo} for:item="info">
+                            <lightning-accordion-section key={info.id} name={info.name} label={info.name}>
+                                <div class="slds-m-top_small">
+                                    <p class="text_para">{info.description}</p>
+                                    <p class="text_para slds-p-top_medium"><strong>Technology :</strong> {info.technology}</p>
+                                    <p class="text_para slds-p-top_medium" if:true={info.repo}>
+                                        <strong>Github Repo : </strong> <a target="_blank" href={info.repo}>{info.repo}</a> 
+                                    </p>
+                                </div>
+                            </lightning-accordion-section>
+                        </template>
+                    </lightning-accordion>
+                </template>
+            </div>
+        </div>
+        <div class="right_col slds-align_absolute-center slds-p-around_small slds-col slds-small-size_12-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12 slds-order_1 slds-large-order_2" >
+            <div class="project_image">
+                <img src={projectImage}>
+            </div>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,47 @@
+
+
+.project_image img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    height: auto;
+    width: 80%;
+    background-repeat: no-repeat;
+}
+
+.title{
+    margin-bottom: 20px;
+    font-weight: 800;
+    border-bottom: 4px solid purple;
+    border-bottom-width: thick;
+    width: 15%;
+}
+
+.title h1{
+    font-size: 32px;
+    font-weight: 800;
+    font-family: serif;
+}
+
+.text_para{
+    font-family: serif;
+    font-size: 14px;
+    font-weight: 300;
+    word-spacing: 2px;
+}
+
+.accordion_section{
+    --slds-c-accordion-heading-font-size:1rem;    
+    --slds-c-accordion-heading-font-weight:bold;
+    --slds-c-accordion-heading-text-color:rgb(179, 179, 235);
+}
+
+@media only screen and (max-device-width : 900px){
+    .project_image img{
+        border-radius: 1rem;
+        height: auto;
+        width: 100%;
+        background-repeat: no-repeat;
+    }
+}
