@@ -1,0 +1,29 @@
+<template>
+    <div class="skill_section slds-p-around_none slds-m-top_x-small slds-m-bottom_medium">
+        <lightning-layout multiple-rows>
+            <lightning-layout-item size="12" medium-device-size="6" large-device-size="6" class="slds-align_absolute-center">
+                <div class="skill_image">
+                    <img src={skillImage} alt="">
+                </div>
+            </lightning-layout-item>
+            <lightning-layout-item padding="around-small" size="12" medium-device-size="6" large-device-size="6" class="slds-align_absolute-center">
+                <div>
+                    <div class="title">
+                        <h1>Skills</h1>
+                    </div>
+                    <p class="para_text">
+                        Having 2+ years of experience as Salesforce Developer and Administrator. Proficient in Apex, HTML, CSS, JS and Lightning Web Components.
+                    </p>
+                    <div class="skills_desc">
+                        <template for:each={skills} for:item="skill">
+                            <div key={skill.id} class="slds-p-around_x-small">
+                                <p>{skill.name}</p>
+                                <lightning-progress-bar value={skill.value} size="large" variant="circular"></lightning-progress-bar>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+            </lightning-layout-item>
+        </lightning-layout>
+    </div>
+</template>
