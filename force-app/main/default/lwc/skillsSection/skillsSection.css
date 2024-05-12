@@ -1,0 +1,45 @@
+.skills_desc{
+    padding-top: 20px;
+}
+
+.para_text{
+   font-family: serif; 
+   font-size: 15px;
+   font-weight: 300;
+   word-spacing: 2px;
+}
+
+.title{
+    margin-bottom: 20px;
+    font-weight: 800;
+    border-bottom: 4px solid purple;
+    border-bottom-width: thick;
+    width: 15%;
+}
+
+.title h1{
+    font-size: 32px;
+    font-family: serif;
+}
+
+.skill_image img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 5px 0 0 0;
+    height: auto;
+    width: 80%;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-device-width : 900px){
+    .skill_image img{
+        margin: 0;
+        padding: 5px;
+        border-radius: 1rem;
+        height: auto;
+        width: 100%;
+        background-repeat: no-repeat;
+    }
+}
